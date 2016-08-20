@@ -1,0 +1,21 @@
+{
+    "name": "kothman/lexer",
+    "description": "A lexical analyser.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Kothman",
+            "email": "adrian@kothman.io"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+	"psr-4": {
+	    "Kothman\\Lexer\\": "src/",
+	    "Kothman\\Lexer\\Tokens\\": "src/Tokens/"
+	}
+    }
+}
