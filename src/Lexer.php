@@ -34,7 +34,7 @@ class Lexer
      */
     public function __construct($expression, $rulesClassName)
     {
-        $this->expression = $expression;
+        $this->expression = trim($expression);
         $this->rules = new $rulesClassName();
         $this->getRules();
         $this->analyze();
