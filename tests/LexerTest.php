@@ -2,13 +2,13 @@
 
 use PHPUnit\Framework\TestCase;
 use Kothman\Lexer\Lexer;
-use Kothman\Lexer\Rules;
+use Kothman\Lexer\ArithmeticRules;
 
 class LexerTest extends TestCase
 {
-    public function testSingleDigit()
+    public function testExpression()
     {
-        $expression = '( + )';
-        $l = new Lexer($expression, Rules::class);
+        $expression = '( 1 +-2/5^-.3 ((( 1 + 2) + 3)-4)*5)';
+        $l = new Lexer($expression, ArithmeticRules::class);
     }
 }

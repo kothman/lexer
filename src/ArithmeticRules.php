@@ -2,7 +2,7 @@
 
 namespace Kothman\Lexer;
 
-class Rules
+class ArithmeticRules
 {
     use StringHelpers;
     use Operators;

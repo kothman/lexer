@@ -12,6 +12,6 @@ composer require kothman\lexer
 
 ```
 $expression = '( 1 + 2 )-3';
-$lexer = new Kothman\Lexer\Lexer($expression, Kothman\Lexer\Rules::class);
+$lexer = new Kothman\Lexer\Lexer($expression, Kothman\Lexer\ArithmeticRules::class);
 print_r($lexer->getTokens());
 ```
